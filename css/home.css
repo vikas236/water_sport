@@ -344,7 +344,135 @@
   margin-right: 7px;
 }
 
-/* .packages */
+/* products */
+
+.products {
+  width: 100vw;
+  min-height: 750px;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.products .wrapper {
+  width: 1250px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products .product {
+  width: 25%;
+}
+
+.products img {
+  width: 100%;
+}
+
+.products span.description {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.products h2 {
+  width: 85%;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.products span.price {
+  font-weight: 700;
+  color: #3cbeee;
+}
+
+/* special events */
+
+.events {
+  width: 100vw;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.events h1 {
+  font-size: 44px;
+}
+
+.events .wrapper {
+  width: 1250px;
+  height: fit-content;
+  display: flex;
+}
+
+.events .event {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 7px 0 0 7px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.events .left {
+  width: fit-content;
+  display: flex;
+  height: 100%;
+}
+
+.events img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.events h3 {
+  width: 200px;
+  height: 60px;
+  background: #01173c;
+  color: white;
+  padding: 20px 49px;
+  font-size: 16px;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 70px;
+  left: -75px;
+  border-radius: 7px 7px 0 0;
+}
+
+.events .content {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 0 35px;
+}
+
+.events .event span {
+  margin-top: 5px;
+}
+
+.events .description {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.events button {
+  height: fit-content;
+  margin: 0;
+  margin-right: 50px;
+}
 
 @media only screen and (max-width: 1400px) {
   .features {
@@ -376,6 +504,26 @@
   .packages .wrapper {
     width: 100%;
     justify-content: center;
+  }
+
+  .products {
+    padding: 100px 0;
+  }
+
+  .products .wrapper {
+    width: 100%;
+    padding: 15px 75px;
+    justify-content: space-between;
+    /* gap: 50px; */
+  }
+
+  .products .product {
+    width: 250px;
+  }
+
+  .events .wrapper {
+    width: 100%;
+    padding: 0 75px;
   }
 }
 
@@ -452,6 +600,15 @@
     inset: 0;
     transform: none;
   }
+
+  .events .content {
+    width: 50%;
+    padding: 15px 0 0 15px;
+  }
+
+  .events button {
+    margin-right: 25px;
+  }
 }
 
 @media only screen and (max-width: 936px) {
@@ -491,6 +648,62 @@
   .packages .right {
     gap: 25px;
   }
+
+  .products .wrapper {
+    padding: 15px 25px;
+    justify-content: center;
+    gap: 10vw;
+  }
+
+  .events {
+    height: fit-content;
+    padding: 50px 0;
+  }
+
+  .events h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .events .wrapper {
+    padding: 0 25px;
+  }
+
+  .events .event {
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  .events .left {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .events h3 {
+    width: 100%;
+    height: fit-content;
+    transform: none;
+    inset: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .events img {
+    width: 100%;
+    height: auto;
+  }
+
+  .events .content {
+    width: 100%;
+    padding: 35px;
+    text-align: center;
+  }
+
+  .events button {
+    margin: 0;
+    margin-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 698px) {
@@ -500,6 +713,7 @@
 
   .intro .top {
     padding: 0 25px;
+    top: 25px;
   }
 
   .features p {
@@ -522,9 +736,26 @@
   .chill .content {
     width: 100%;
   }
+
+  .products {
+    padding-top: 50px;
+  }
+
+  .products h1 {
+    font-size: 24px;
+  }
+
+  .products .wrapper {
+    justify-content: center;
+    padding: 15px 0;
+  }
 }
 
 @media only screen and (max-width: 424px) {
+  .intro .top {
+    top: 15px;
+  }
+
   .intro h1 {
     font-size: 52px;
   }

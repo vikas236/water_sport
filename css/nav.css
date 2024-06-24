@@ -15,28 +15,28 @@ nav.active {
   right: 0;
 }
 
-.nav_wall {
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  position: absolute;
-  inset: 0;
-  z-index: 4;
-  background: black;
-  opacity: 0.35;
-  transition: 0.3s;
+nav h1 {
+  font-size: 24px;
+  color: white;
+  padding: 30px;
+  padding-bottom: 0;
 }
 
-.nav_wall.active {
-  display: block;
+nav hr {
+  width: 165px;
+  height: 2px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-bottom: 25px;
 }
 
 nav .links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding: 35px;
-  padding-top: 50px;
+  padding: 0 35px;
 }
 
 nav .links li,
@@ -55,14 +55,31 @@ nav .links li:hover {
 }
 
 nav .links span {
-  background: white;
   border-radius: 5px;
   padding: 3px 15px;
-  color: rgba(0, 0, 0, 0.6);
+  color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-top: 15px;
+  background: #01173c;
+  margin-top: 7px;
 }
 
 nav .links span:hover {
   background: rgba(255, 255, 255, 0.9);
+  color: #01173c;
+}
+
+.nav_wall {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  background: black;
+  opacity: 0.35;
+  transition: 0.3s;
+}
+
+.nav_wall.active {
+  display: block;
 }
